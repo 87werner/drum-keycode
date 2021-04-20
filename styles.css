@@ -1,0 +1,25 @@
+body{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+/* <--------- Letters styling -------------------> */
+.letters-container{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid gray;
+    width: 8rem;
+    height: 4rem;
+}

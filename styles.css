@@ -1,26 +1,213 @@
-body{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    
+body {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://pbs.twimg.com/media/De0cbFsUEAASAxR.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 /* <--------- Letters styling -------------------> */
-.letters-container{
-    display: flex;
-    flex-direction: row;
-    margin: 30px 100px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border: 1px solid black;
+.letters-container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 100px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+   border: 1px solid rgb(223, 223, 223);
+    color: white;
+} 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid gray;
+  width: 8rem;
+  height: 4rem;
 }
 
+/* <------------------Stage -------------------------------> */
+.stage{
+    width: 100vw;
+    height: 150px;
+    background-color: rgb(194, 190, 190);
+    border-top-left-radius: 10;
+    position: absolute;
+    top: 85%;
+    z-index: -3;
+}
 
-.container{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    text-align: center;
-    border: 1px solid gray;
-    width: 8rem;
-    height: 4rem;
+/* <------------------------ Drum Kit----------------------------> */
+
+
+/* <------------- main ride key code 72 key H -----------------------> */
+
+.mainRide {
+  height: 150px;
+  width: 400px;
+  transform: rotate(10deg);
+  border-radius: 80%;
+  border-bottom: 1px solid gray;
+  background-color: rgb(196, 177, 66);
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+}
+/* .mainRide:hover{
+    animation: wobble 1.5s ease-in 0.2s alternate ;
+   
+} */
+
+.mainRideDetail {
+  height: 75px;
+  width: 280px;
+  /* transform: rotate(deg); */
+  border-radius: 60%;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.776);
+  border-right: 0.2px solid rgba(159, 157, 157, 0.769);
+  /* border-top */
+  /* background-color: rgb(181, 165, 77) ; */
+  position: relative;
+  top: 25%;
+  left: 18%;
+  bottom: 20%;
+}
+
+.detailDetail {
+  height: 60px;
+  width: 250px;
+  border-radius: 60%;
+  border-bottom: 0.7px solid rgba(128, 128, 128, 0.728);
+  border-right: 0.2px solid rgba(160, 157, 157, 0.735);
+  /* border-left: 0.2px solid gray;; */
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+.detailCircle {
+  height: 50px;
+  width: 230px;
+  border-radius: 60%;
+  border-bottom: 0.2px solid rgba(128, 128, 128, 0.872);
+  /* border-right: 0.2px solid gray;; */
+  /* border-left: 0.2px solid gray;; */
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+.rideClasp {
+  /* height: 10px;
+    width: 30px;
+    background-color: rgb(114, 112, 112);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    transform: rotate(5deg);
+    left: 4%;
+    margin-right: 0;
+    position: relative;
+    top: 10%;
+    left: 41%; */
+}
+.rideNut {
+  height: 8px;
+  width: 30px;
+  background-color: rgb(126, 119, 119);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  transform: rotate(5deg);
+  align-items: center;
+  position: relative;
+  top: 20%;
+  left: 43.5%;
+}
+
+.stand {
+  height: 200px;
+  width: 10px;
+  background-color: gray;
+  position: absolute;
+  left: 24%;
+  bottom: 0%;
+}
+
+@keyframes wobble {
+  /* 50%{
+        transform: rotate(35deg);
+    } */
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  10% {
+    transform: translate3d(0, 0, 1, -10deg);
+  }
+
+  20% {
+    transform: translate3d(0, 0, 1.5, -15deg);
+  }
+}
+/* <------------ TOM key code 76 key = l ---------------------> */
+.mainTomCase {
+  height: 150px;
+  width: 450px;
+  background-color: thistle;
+  border-top-right-radius: 46px;
+  position: absolute;
+  top: 85%;
+  left: 35.23%;
+  z-index: -2;
+}
+
+.mainTom {
+  height: 150px;
+  width: 445px;
+  background-color: rgb(97, 96, 96);
+  position: absolute;
+  top: 81%;
+  left: 35%;
+  border: 4px solid tan;
+  border-radius: 88%;
+  z-index: -1;
+}
+
+.mainTomDetail {
+  height: 100px;
+  width: 10px;
+  background-color: gray;
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+}
+.mainTomDetailCentre1{
+    height: 150px;
+    width: 10px;
+    background-color: gray;
+    position: absolute;
+    left: 24%;
+    bottom: 2%;
+}
+.mainTomDetailCentre2{
+    height: 150px;
+    width: 10px;
+    background-color: gray;
+    position: absolute;
+    right: 24%;
+    bottom: 2%;
+}
+.mainTomDetail1{
+    height: 100px;
+    width: 10px;
+    background-color: gray;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+@keyframes tom {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
 }

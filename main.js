@@ -4,17 +4,22 @@ const clap = document.getElementById("clap")
 const hihat = document.getElementById("hihat")
 const kick = document.getElementById("kick")
 const openHat = document.getElementById("openhat")
-const ride = document.getElementById("ride")
+let ride = document.getElementById("ride")
 const snare = document.getElementById("snare")
 const tink = document.getElementById("tink")
 const tom = document.getElementById("tom")
 
+//Drum Kit
+let mainRide = document.getElementById("mainRide")
+let mainTom = document.getElementById("mainTom")
+let mainTomCase = document.getElementById("mainTomCase")
 
 
 document.addEventListener("keydown", (e) => {
     console.log(e)
     console.log(e.keyCode)
     if(e.which == 65){
+        boom.pause()
         boom.play()
     }else if(e.which == 83){
         clap.play()
@@ -25,13 +30,27 @@ document.addEventListener("keydown", (e) => {
     } else if(e.which == 71){
         openHat.play()
     }else if(e.which == 72){
-        ride.play()
+        mainRide.style.animation = "wobble 0.5s linear"
+        setTimeout(() => {
+            mainRide.style.removeProperty("animation")
+        }, 100)
+        ride.pause()
+        ride.currentTime = 0
+        ride.play();
     }else if(e.which == 74){
         snare.play()
     }else if(e.which == 75){
         tink.play()
     }else if(e.which == 76){
-        tom.play()
+        mainTomCase.style.animation = "tom 0.5s linear"
+        mainTom.style.animation = "tom 0.5s linear"
+        setTimeout(() => {
+            mainTom.style.removeProperty("animation")
+            mainTomCase.style.removeProperty("animation")
+        }, 100)
+        tom.pause()
+        tom.currentTime = 0
+        tom.play();
     } 
     
 })

@@ -9,7 +9,7 @@ const snare = document.getElementById("snare")
 const tink = document.getElementById("tink")
 const tom = document.getElementById("tom")
 
-console.log(boom)
+
 
 document.addEventListener("keydown", (e) => {
     console.log(e)
@@ -21,16 +21,17 @@ document.addEventListener("keydown", (e) => {
     } else if(e.which == 68){
         hihat.play()
     }else if(e.which == 70){
-
+        kick.play()
     } else if(e.which == 71){
-
+        openHat.play()
     }else if(e.which == 72){
-
+        ride.play()
     }else if(e.which == 74){
-
+        snare.play()
     }else if(e.which == 75){
-
-    }else if(e.which == 76)
-    
+        tink.play()
+    }else if(e.which == 76){
+        tom.play()
+    } 
     
 })

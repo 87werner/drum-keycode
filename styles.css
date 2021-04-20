@@ -211,3 +211,70 @@ body {
         transform: scale(1.05);
     }
 }
+
+.hihat{
+ height: 10px;
+ width: 240px;
+ background-color: rgb(196, 177, 66);
+ border: 0.5px  solid rgba(128, 128, 128, 0.872);
+ border-top-left-radius: 22px;
+ border-top-right-radius: 22px;
+ position: absolute;
+ bottom: 15%;
+ right: 17%;
+}
+.hihatBottom{
+    height: 10px;
+    width: 240px;
+    background-color: rgb(196, 177, 66);
+    border: 0.5px  solid rgba(128, 128, 128, 0.872);
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    position: absolute;
+    bottom: 14%;
+    right: 17%;
+}
+
+.hihatTopper{
+    height: 6px;
+    width: 100px;
+    background-color: rgb(196, 177, 66);
+    border: 0.5px  solid rgba(128, 128, 128, 0.872);
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    position: absolute;
+    bottom: 16%;
+    right: 22%;
+}
+.hihatBottomer{
+    height: 6px;
+    width: 100px;
+    background-color: rgb(196, 177, 66);
+    border: 0.5px  solid rgba(128, 128, 128, 0.872);
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    position: absolute;
+    bottom: 13.4%;
+    right: 22%;
+}
+
+.hihatStand{
+    height: 160px;
+    width: 10px;
+    background-color: gray;
+    position: absolute;
+    right: 25.4%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+
+
+@keyframes hihat {
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+}

@@ -19,7 +19,7 @@ document.addEventListener("keydown", (e) => {
     }else if(e.which == 83){
         clap.play()
     } else if(e.which == 68){
-        
+        hihat.play()
     }else if(e.which == 70){
 
     } else if(e.which == 71){

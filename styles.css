@@ -1,12 +1,22 @@
 body {
+    font-family: ;
   display: inline-block;
   margin: 0;
   padding: 0;
   background-image: url(https://pbs.twimg.com/media/De0cbFsUEAASAxR.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    color: white;
+    font-family: pacifico;
+    
 }
 /* <--------- Letters styling -------------------> */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ align-content: center;
+}
 .letters-container {
   display: flex;
   flex-direction: row;
@@ -24,7 +34,7 @@ body {
   text-align: center;
   border: 1px solid gray;
   width: 8rem;
-  height: 4rem;
+
 }
 
 /* <------------------Stage -------------------------------> */

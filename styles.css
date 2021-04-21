@@ -1,59 +1,129 @@
-body {
-    font-family: ;
+/* html {
+  height: 100%;
+  width: 100vw;
   display: inline-block;
   margin: 0;
   padding: 0;
   background-image: url(https://pbs.twimg.com/media/De0cbFsUEAASAxR.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: white;
-    font-family: pacifico;
-    
-}
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-family: pacifico;
+} */
+
 /* <--------- Letters styling -------------------> */
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
- align-content: center;
+body{
+    font-family: pacifico;
+    background-image: url(https://pbs.twimg.com/media/De0cbFsUEAASAxR.jpg);
+    background-size: cover;
+    color: ivory;
 }
-.letters-container {
+header {
   display: flex;
   flex-direction: row;
-  margin: 30px 100px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-   border: 1px solid rgb(223, 223, 223);
-    color: white;
-} 
-
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  text-align: center;
-  border: 1px solid gray;
-  width: 8rem;
-
+  justify-content: center;
+  align-content: center;
 }
-
-/* <------------------Stage -------------------------------> */
-.stage{
-    width: 100vw;
-    height: 150px;
-    background-color: rgb(194, 190, 190);
-    border-top-left-radius: 10;
+.letters-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+}
+/* .drum-kit{
+    position: absolute;;
+    background-color: gray;
+    transform: translate(-50%, -50%);
+    left: 40%;
+    top: 65%;
+}
+.mainRide{
+    height: 120px;
+    width: 300px;
+    transform: rotate(10deg);
+     border-radius: 90%; 
+    border-bottom: 1px solid gray;
+    background-color: rgb(196, 177, 66);
     position: absolute;
-    top: 85%;
-    z-index: -3;
+    top: 10%;
+    left: 0%;
+  
 }
+.mainRide::after {
+    content: "";
+    height: 85px;
+    width:220px;
+    border-radius: 60%; 
+    transform: rotate(4deg);
+    background-color: rgb(196, 177, 66);
+    border-bottom: 1px solid gray;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  .standDetail{
+      position: absolute;
+      top: 29%;
+      left: 44%;
+      height: 10px;
+      width: 10%;
+      background-color: rgb(54, 52, 52);
+      transform: rotate(4deg);
+      border-top-left-radius: 80%;
+      border-top-right-radius: 80%;
+      z-index: 1;
+  }
+  
+  .stand{
+    position: absolute;
+    top: 99.8%;
+    left: 38%;
+    height:60px;
+    width: 10px;
+    background-color: rgb(54, 52, 52);
+  }
 
-/* <------------------------ Drum Kit----------------------------> */
+ 
+
+  .mainTom {
+    height: 150px;
+    width: 345px;
+    background-color: rgb(97, 96, 96);
+    position: relative;
+    border: 4px solid tan;
+    border-radius: 88%;
+    z-index: -3;
+  
+  } */
 
 
-/* <------------- main ride key code 72 key H -----------------------> */
 
-.mainRide {
+
+/* <------------------------ Drum Kit----------------------------> */ 
+
+/* .drum-kit {
+  height: 50%;
+  position: absolute;
+  width: 100%;
+  left: 0.001%;
+  bottom: 1%;
+   transform: translate(50%); 
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+
+
+/* .mainRide {
   height: 150px;
   width: 400px;
   transform: rotate(10deg);
@@ -61,24 +131,17 @@ header{
   border-bottom: 1px solid gray;
   background-color: rgb(196, 177, 66);
   position: absolute;
-  left: 10%;
+  left: 20%;
   bottom: 10%;
 }
-/* .mainRide:hover{
-    animation: wobble 1.5s ease-in 0.2s alternate ;
-   
-} */
 
 .mainRideDetail {
   height: 75px;
   width: 280px;
-  /* transform: rotate(deg); */
   border-radius: 60%;
   border-bottom: 0.5px solid rgba(128, 128, 128, 0.776);
   border-right: 0.2px solid rgba(159, 157, 157, 0.769);
-  /* border-top */
-  /* background-color: rgb(181, 165, 77) ; */
-  position: relative;
+  position: absolute;
   top: 25%;
   left: 18%;
   bottom: 20%;
@@ -90,7 +153,6 @@ header{
   border-radius: 60%;
   border-bottom: 0.7px solid rgba(128, 128, 128, 0.728);
   border-right: 0.2px solid rgba(160, 157, 157, 0.735);
-  /* border-left: 0.2px solid gray;; */
   position: relative;
   top: 5%;
   left: 5%;
@@ -100,25 +162,25 @@ header{
   width: 230px;
   border-radius: 60%;
   border-bottom: 0.2px solid rgba(128, 128, 128, 0.872);
-  /* border-right: 0.2px solid gray;; */
-  /* border-left: 0.2px solid gray;; */
   position: relative;
   top: 5%;
   left: 5%;
 }
+
 .rideClasp {
-  /* height: 10px;
-    width: 30px;
-    background-color: rgb(114, 112, 112);
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    transform: rotate(5deg);
-    left: 4%;
-    margin-right: 0;
-    position: relative;
-    top: 10%;
-    left: 41%; */
+  height: 10px;
+  width: 30px;
+  background-color: rgb(114, 112, 112);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  transform: rotate(5deg);
+  left: 4%;
+  margin-right: 0;
+  position: relative;
+  top: 10%;
+  left: 41%;
 }
+
 .rideNut {
   height: 8px;
   width: 30px;
@@ -129,22 +191,21 @@ header{
   align-items: center;
   position: relative;
   top: 20%;
-  left: 43.5%;
+  left: 40.99%;
 }
 
 .stand {
-  height: 200px;
+  height: 150px;
   width: 10px;
+  transform: rotate(10deg);
   background-color: gray;
   position: absolute;
-  left: 24%;
-  bottom: 0%;
+  top: 98%;
+  left: 45%;
+  z-index: -2;
 }
 
 @keyframes wobble {
-  /* 50%{
-        transform: rotate(35deg);
-    } */
   0% {
     transform: translate3d(0, 0, 0);
   }
@@ -155,8 +216,8 @@ header{
   20% {
     transform: translate3d(0, 0, 1.5, -15deg);
   }
-}
-/* <------------ TOM key code 76 key = l ---------------------> */
+} 
+
 .mainTomCase {
   height: 150px;
   width: 450px;
@@ -173,7 +234,7 @@ header{
   width: 445px;
   background-color: rgb(97, 96, 96);
   position: absolute;
-  top: 81%;
+  top: 75%;
   left: 35%;
   border: 4px solid tan;
   border-radius: 88%;
@@ -188,103 +249,192 @@ header{
   left: 2%;
   bottom: 2%;
 }
-.mainTomDetailCentre1{
-    height: 150px;
-    width: 10px;
-    background-color: gray;
-    position: absolute;
-    left: 24%;
-    bottom: 2%;
+.mainTomDetailCentre1 {
+  height: 150px;
+  width: 10px;
+  background-color: gray;
+  position: absolute;
+  left: 24%;
+  bottom: 2%;
 }
-.mainTomDetailCentre2{
-    height: 150px;
-    width: 10px;
-    background-color: gray;
-    position: absolute;
-    right: 24%;
-    bottom: 2%;
+.mainTomDetailCentre2 {
+  height: 150px;
+  width: 10px;
+  background-color: gray;
+  position: absolute;
+  right: 24%;
+  bottom: 2%;
 }
-.mainTomDetail1{
-    height: 100px;
-    width: 10px;
-    background-color: gray;
-    position: absolute;
-    right: 2%;
-    bottom: 2%;
+.mainTomDetail1 {
+  height: 100px;
+  width: 10px;
+  background-color: gray;
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
 }
 
 @keyframes tom {
-    0%, 100%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.05);
-    }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
-.hihat{
- height: 10px;
- width: 240px;
- background-color: rgb(196, 177, 66);
- border: 0.5px  solid rgba(128, 128, 128, 0.872);
- border-top-left-radius: 22px;
- border-top-right-radius: 22px;
- position: absolute;
- bottom: 15%;
- right: 17%;
+.hihat {
+  height: 10px;
+  width: 240px;
+  background-color: rgb(196, 177, 66);
+  border: 0.5px solid rgba(128, 128, 128, 0.872);
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  position: absolute;
+  bottom: 15%;
+  right: 17%;
 }
-.hihatBottom{
-    height: 10px;
-    width: 240px;
-    background-color: rgb(196, 177, 66);
-    border: 0.5px  solid rgba(128, 128, 128, 0.872);
-    border-bottom-left-radius: 22px;
-    border-bottom-right-radius: 22px;
-    position: absolute;
-    bottom: 14%;
-    right: 17%;
-}
-
-.hihatTopper{
-    height: 6px;
-    width: 100px;
-    background-color: rgb(196, 177, 66);
-    border: 0.5px  solid rgba(128, 128, 128, 0.872);
-    border-top-left-radius: 22px;
-    border-top-right-radius: 22px;
-    position: absolute;
-    bottom: 16%;
-    right: 22%;
-}
-.hihatBottomer{
-    height: 6px;
-    width: 100px;
-    background-color: rgb(196, 177, 66);
-    border: 0.5px  solid rgba(128, 128, 128, 0.872);
-    border-bottom-left-radius: 22px;
-    border-bottom-right-radius: 22px;
-    position: absolute;
-    bottom: 13.4%;
-    right: 22%;
+.hihatBottom {
+  height: 10px;
+  width: 240px;
+  background-color: rgb(196, 177, 66);
+  border: 0.5px solid rgba(128, 128, 128, 0.872);
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  position: absolute;
+  bottom: 14%;
+  right: 17%;
 }
 
-.hihatStand{
-    height: 160px;
-    width: 10px;
-    background-color: gray;
-    position: absolute;
-    right: 25.4%;
-    bottom: 0%;
-    z-index: -1;
+.hihatTopper {
+  height: 6px;
+  width: 100px;
+  background-color: rgb(196, 177, 66);
+  border: 0.5px solid rgba(128, 128, 128, 0.872);
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  position: absolute;
+  bottom: 16%;
+  right: 22%;
+}
+.hihatBottomer {
+  height: 6px;
+  width: 100px;
+  background-color: rgb(196, 177, 66);
+  border: 0.5px solid rgba(128, 128, 128, 0.872);
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  position: absolute;
+  bottom: 13.4%;
+  right: 22%;
 }
 
-
+.hihatStand {
+  height: 160px;
+  width: 10px;
+  background-color: gray;
+  position: absolute;
+  right: 25.4%;
+  bottom: 0%;
+  z-index: -1;
+}
 
 @keyframes hihat {
-    0%, 100%{
-        transform: rotate(0deg);
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+} 
+
+@media only screen and (max-width: 710px){
+    .letters-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      flex-wrap: wrap;
+        margin: 10px 25px;
     }
-    50%{
-        transform: rotate(-10deg);
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        align-items: center;
+    
     }
-}
+    .drum-kit{
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+}  */
+
+ /* @media only screen and (max-width: 700px) {
+  .drum-kit {
+    position: absolute;
+    width: 100%;
+    left: 0.001%;
+    bottom: 1%;
+    transform: scale(0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stage{
+      width: 100%;
+      height: 65px;
+      position: absolute;
+  }
+  .mainRide {
+    transform: scale(0.7) rotate(10deg);
+    left: 1%;
+    bottom: 2%;
+  }
+
+  .mainTom{
+    transform: scale(0.678) ;
+    left: 29.9%;
+  }
+
+  .mainTomCase{
+    height: 140px;
+    width: 310px;
+    background-color: thistle;
+    border-top-right-radius: 47px;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    bottom: 0;
+    z-index: -2;
+
+  }
+  .mainTomDetailCentre2{
+      height: 40px;
+  }
+  .html {
+    height: max-content;
+  }
+
+  .stage{
+      height: 150px;
+  }
+  
+  .mainTomCase{
+    height: 100px;
+    width: 120px;
+    background-color: thistle;
+    border-top-right-radius: 46px;
+    position: absolute;
+    top: 85%;
+    left: 35.23%;
+    z-index: -2;
+  } 
+  .container{
+       margin: 0;
+    font-size: 1em;
+    border: 0;
+ 
+  }
+   
+} */

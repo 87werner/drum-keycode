@@ -59,12 +59,12 @@ document.addEventListener("keydown", (e) => {
   } else if (e.which == 75) {
     tink.play();
   } else if (e.which == 76) {
-    mainTomCase.style.animation = "tom 0.5s linear";
-    mainTom.style.animation = "tom 0.5s linear";
-    setTimeout(() => {
-      mainTom.style.removeProperty("animation");
-      mainTomCase.style.removeProperty("animation");
-    }, 100);
+    // mainTomCase.style.animation = "tom 0.5s linear";
+    // mainTom.style.animation = "tom 0.5s linear";
+    // setTimeout(() => {
+    //   mainTom.style.removeProperty("animation");
+    //   mainTomCase.style.removeProperty("animation");
+    // }, 100);
     tom.pause();
     tom.currentTime = 0;
     tom.play();
